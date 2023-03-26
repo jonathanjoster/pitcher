@@ -45,6 +45,7 @@ def change_pitch(input_path, out_dir, semitones):
     test.export(out_path, format='mp3')
     print('original:', input_path)
     print('shifted :', out_path)
+    return out_path
 
 def main(argv):
     del argv
@@ -64,7 +65,7 @@ def main(argv):
         print('output:', os.path.join(FLAGS.out_dir, 'audio.mp3'))
     else:
         print('pitch', 'up' if FLAGS.semitones>0 else 'down', '(it may take a minute or so)')
-        change_pitch(input_path, FLAGS.out_dir, FLAGS.semitones)
+        _ = change_pitch(input_path, FLAGS.out_dir, FLAGS.semitones)
         # leave original downloaded file alone
         # os.remove(input_path)
 
