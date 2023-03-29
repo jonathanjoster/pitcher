@@ -1,0 +1,15 @@
+body {
+    background-color: #1B1D1E;
+    color: #E5DB9F;
+}
+
+#title-desc {
+    font-size: 3rem;
+    // https://kouhekikyozou.com/css_text_gradation
+    display: inline-block;
+    background: linear-gradient(135deg, #fed878 0%, #fa505e 100%);
+    background: -webkit-linear-gradient(-45deg, #fed878 0%, #fa505e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

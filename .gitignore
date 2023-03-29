@@ -2,3 +2,4 @@ out/*.*
 _main.py
 __pycache__/
 uploads/*.*
+.vscode/
